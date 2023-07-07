@@ -4,7 +4,7 @@ function Label({ setStep }) {
   return (
     <div className="w-full flex flex-col items-center justify-center px-10 mt-4">
       <img className="w-4/12" src={require("../../../typographies/1.png")} />
-      <span className=" text-center mt-6 mine-font-vazir mine-text-md text-white">
+      <span className=" text-center mt-6 mine-font-vazir mine-text-md mine-text-blue-dark">
         با میتاـش رزروینگ خود را آسان تر و تجربه جالب تری برای مشتریان بسازید
       </span>
       <div className="flex flex-row-reverse mt-14 w-full relative items-center">
