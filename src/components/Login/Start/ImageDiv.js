@@ -4,7 +4,7 @@ function ImageDiv() {
   return (
     <div className="flex justify-center items-center">
       <img
-        className="w-8/12 z-10"
+        className="w-7/12 z-10"
         src={require("../../../Images/Login/start-image.png")}
       />
     </div>

@@ -14,7 +14,7 @@ function EnterNumberForm({ enteredPhone, setEnteredPhone, setNotifOpened }) {
               <span className="py-2 mine-font-vazir">+98</span>
               <span className="mx-2 text-gray-300 mb-1">|</span>
               <Field
-                className="rounded-sm bg-transparent outline-0 mine-font-vazir"
+                className="rounded-sm w-full bg-transparent outline-0 mine-font-vazir"
                 type="text"
                 name="phone"
                 placeholder="9155633696"

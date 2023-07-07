@@ -91,6 +91,38 @@
   font-family: vazir;
 }
 
-.mine-text-xss {
-  font-size: 5 !important;
+.mine-text-xxs {
+  font-size: xx-small;
+}
+
+.mine-text-xs {
+  font-size: x-small;
+}
+
+.mine-text-smer {
+  font-size: smaller;
+}
+
+.mine-text-sm {
+  font-size: small;
+}
+
+.mine-text-md {
+  font-size: medium;
+}
+
+.mine-text-lg {
+  font-size: large;
+}
+
+.mine-text-lger {
+  font-size: larger;
+}
+
+.mine-text-xl {
+  font-size: x-large;
+}
+
+.mine-text-xxl {
+  font-size: xx-large;
 }

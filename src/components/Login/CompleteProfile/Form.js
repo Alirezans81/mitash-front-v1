@@ -37,7 +37,7 @@ export default function Form({ setStep }) {
                 className="w-10 h-10"
                 src={require("../../../Images/Login/profile.png")}
               />
-              <span className="mine-font-vazir text-xs mine-text-blue-dark text-center mt-1">
+              <span className="mine-font-vazir mine-text-xs mine-text-blue-dark text-center mt-1">
                 انتخاب عکس پروفایل
               </span>
             </div>
@@ -49,7 +49,7 @@ export default function Form({ setStep }) {
               onChange={handleChange}
               value={values.firstName}
               placeholder="نام"
-              className="outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark text-sm py-2"
+              className="outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark mine-text-sm py-2"
             />
             <input
               name="lastName"
@@ -57,7 +57,7 @@ export default function Form({ setStep }) {
               onChange={handleChange}
               value={values.lastName}
               placeholder="نام خانوادگی"
-              className="outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark text-sm py-2 mt-2"
+              className="outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark mine-text-sm py-2 mt-2"
             />
           </div>
 
@@ -67,7 +67,7 @@ export default function Form({ setStep }) {
             onChange={handleChange}
             value={values.city}
             disabled={!provinces || provinces.length === 0}
-            className="col-span-6 outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark text-sm py-2"
+            className="col-span-6 outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark mine-text-sm py-2"
           >
             {cities.map((e, index) => (
               <option
@@ -83,7 +83,7 @@ export default function Form({ setStep }) {
             onBlur={handleBlur}
             onChange={handleChange}
             value={values.province}
-            className="col-span-6 outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark text-sm py-2"
+            className="col-span-6 outline-none mine-bg-cream-pink shadow-lg border-2 rounded-lg border-pink-200 text-center mine-font-vazir mine-text-blue-dark mine-text-sm py-2"
           >
             {provinces.map((e, index) => (
               <option

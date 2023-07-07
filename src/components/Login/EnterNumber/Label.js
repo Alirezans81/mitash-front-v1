@@ -8,7 +8,7 @@ export class Label extends Component {
           className="w-24"
           src={require("../../../typographies/with-logo.png")}
         />
-        <span className="mine-font-vazir mine-text-blue-light text-sm mt-1">
+        <span className="mine-font-vazir mine-text-blue-light mine-text-sm mt-1">
           زیبایی در کوتاه ترین زمان
         </span>
       </div>

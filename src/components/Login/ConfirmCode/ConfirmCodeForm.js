@@ -37,13 +37,13 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                 ref={code1Ref}
                 onBlur={handleBlur}
                 onChange={(e) => {
-                  handleChange("code1");
+                  handleChange(e);
                   if (e.target.value !== "") {
                     code2Ref.current.focus();
                   }
                 }}
                 value={values.code1}
-                maxLength={1}
+                maxLength={2}
               />
               <input
                 className="bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
@@ -52,7 +52,7 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                 ref={code2Ref}
                 onBlur={handleBlur}
                 onChange={(e) => {
-                  handleChange("code2");
+                  handleChange(e);
                   if (e.target.value !== "") {
                     code3Ref.current.focus();
                   }
@@ -67,7 +67,7 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                 ref={code3Ref}
                 onBlur={handleBlur}
                 onChange={(e) => {
-                  handleChange("code3");
+                  handleChange(e);
                   if (e.target.value !== "") {
                     code4Ref.current.focus();
                   }
@@ -82,7 +82,7 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                 ref={code4Ref}
                 onBlur={handleBlur}
                 onChange={(e) => {
-                  handleChange("code4");
+                  handleChange(e);
                 }}
                 value={values.code4}
                 maxLength={1}
