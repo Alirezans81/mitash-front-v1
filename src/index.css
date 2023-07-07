@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.router-container {
+  width: 350px;
+  height: 90%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 450px) {
+  .router-container {
+    width: 300%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+
+.mine-bg-creamy-linear-gradient {
+  background: linear-gradient(160deg, #E89AB1 10%, #f59ad8 );
+}
+
+.mine-bg-white-linear-gradient {
+  background: linear-gradient(160deg, #dbe0e7 10%, #f8fbff );
+}
+
+.mine-bg-creamy {
+  background: url("./Images/colorful-background.png");
+  background-size: cover; 
+}
+
+.mine-text-blue-dark {
+  color: #081139;
+}
+
+.mine-text-blue-light {
+  color: #3e435b;
+}
+
+.mine-bg-pink {
+  background-color: #FC7CD8;
+}
+
+.mine-bg-cream-pink {
+  background-color: #FFE5F3;
+}
+
+.mine-text-pink {
+  color: #FC7CD8;
+}
+
+.mine-bg-light-pink {
+  background-color: #FFE4F9;
+}
+
+.mine-bg-semi-light-pink {
+  background-color: #FFCDEF;
+}
+
+.mine-text-light-pink {
+  color: #FFE4F9;
+}
+
+.mine-button-outline-pink {
+  border: 3px solid #FC7CD8;
+  border-radius: 0.7rem;
+  color: #B81A92;
+  padding-inline: 1.5rem;
+  padding-block: .3rem;
+  font-family: vazir;
+  transition: all;
+  transition-duration: 200ms;
+}
+
+.mine-button-outline-pink:hover {
+  background-color: #FC7CD8;
+  border-radius: 0.7rem;
+  color: #fff;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url('./fonts/vazir/Vazir-FD-WOL.ttf');
+}
+
+.mine-font-vazir {
+  font-family: vazir;
+}
+
+.mine-text-xss {
+  font-size: 5 !important;
 }
