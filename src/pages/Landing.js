@@ -11,7 +11,7 @@ function Landing() {
   }, []);
 
   return (
-    <div className="landing-container bg-red-900 w-full h-full flex justify-center items-center">
+    <div className="landing-container w-full h-full flex justify-center items-center">
       <h1 className="text-white text-5xl">MITASH</h1>
     </div>
   );

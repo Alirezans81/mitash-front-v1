@@ -2,7 +2,7 @@ import React from "react";
 
 function ResendNotif({ resendNotifOpened, setResendNotifOpened, setStep }) {
   return (
-    <div className="mt-3 w-9/12 relative">
+    <div className="mt-3 w-10/12 relative">
       <div
         className={
           "mine-bg-light-pink shadow-md w-full rounded-xl duration-300 transition-all absolute " +

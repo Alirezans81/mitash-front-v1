@@ -18,7 +18,7 @@ function ConfirmCode({ setStep, enteredPhone, setEnteredCode }) {
 
   return (
     <div className="flex flex-col w-full h-full justify-center items-center">
-      <div className="mine-bg-light-pink shadow-md w-9/12 px-4 py-5 rounded-xl flex flex-col">
+      <div className="mine-bg-light-pink shadow-md w-10/12 px-4 py-5 rounded-xl flex flex-col">
         <Label />
         <ConfirmCodeForm
           setStep={setStep}

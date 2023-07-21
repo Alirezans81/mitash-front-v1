@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, ErrorMessage } from "formik";
 
 function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
   const { seconds, minutes, start } = timer;
@@ -31,8 +31,7 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
             </span>
             <div className="flex justify-center space-x-2">
               <input
-                className="bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
-                type="text"
+                className="number-input-delete-buttons bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
                 name="code1"
                 ref={code1Ref}
                 onBlur={handleBlur}
@@ -43,11 +42,11 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                   }
                 }}
                 value={values.code1}
-                maxLength={2}
+                maxLength={1}
+                type="number"
               />
               <input
-                className="bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
-                type="text"
+                className="number-input-delete-buttons bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
                 name="code2"
                 ref={code2Ref}
                 onBlur={handleBlur}
@@ -59,10 +58,10 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                 }}
                 value={values.code2}
                 maxLength={1}
+                type="number"
               />
               <input
-                className="bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
-                type="text"
+                className="number-input-delete-buttons bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
                 name="code3"
                 ref={code3Ref}
                 onBlur={handleBlur}
@@ -74,10 +73,10 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                 }}
                 value={values.code3}
                 maxLength={1}
+                type="number"
               />
               <input
-                className="bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
-                type="text"
+                className="number-input-delete-buttons bg-white mine-font-vazir shadow-lg w-9 text-center flex rounded-lg px-3 py-2 items-center outline-0"
                 name="code4"
                 ref={code4Ref}
                 onBlur={handleBlur}
@@ -86,6 +85,7 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
                 }}
                 value={values.code4}
                 maxLength={1}
+                type="number"
               />
             </div>
             <ErrorMessage name="code" component="div" />
@@ -104,7 +104,7 @@ function ConfirmCodeForm({ setStep, setEnteredCode, timer }) {
               <div className="mine-font-vazir w-10">
                 <span className="">{"0" + minutes}</span>
                 <span className="">:</span>
-                <span className="">{seconds == 0 ? "00" : seconds}</span>
+                <span className="">{seconds === 0 ? "00" : seconds}</span>
               </div>
             </div>
           </Form>

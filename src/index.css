@@ -65,6 +65,10 @@
   color: #FFE4F9;
 }
 
+.mine-text-brown {
+  color: #4D455D;
+}
+
 .mine-button-outline-pink {
   border: 3px solid #FC7CD8;
   border-radius: 0.7rem;
@@ -125,4 +129,9 @@
 
 .mine-text-xxl {
   font-size: xx-large;
+}
+
+.number-input-delete-buttons::-webkit-outer-spin-button,
+.number-input-delete-buttons::-webkit-inner-spin-button {
+  display: none;
 }
